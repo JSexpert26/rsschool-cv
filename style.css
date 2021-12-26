@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /*height: 100vh;*/
+}
+
+main {
+  position: relative;
+  max-width: 1000px;
+  min-height: 1000px;
+  width: 100%;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+main .left-side {
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header .imgBx {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+header .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+header span {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #fff;
+}
+
+.contactInfo {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contactInfo ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.contactInfo ul li span {
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.contactInfo.education li {
+  margin-bottom: 15px;
+}
+
+.contactInfo.education h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+.contactInfo.education h4 {
+  color: #fff;
+  font-weight: 500;
+}
+
+main .right-side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+
+.about {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.right-side .about p {
+  text-align: left;
+  color: #333;
+}
+.about p:last-child {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  text-align: left;
+  align-items: center;
+}
+
+.about .box .year-company {
+  min-width: 175px;
+}
+
+.about .box .year-company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box h4 {
+  text-decoration: uppercase;
+  color: #848c90;
+  font-weight: 500;
+}
+
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+}
+
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.code-example {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.about .code-example p {
+  color: #fff;
+}
+
+.about .code-example .solution {
+  margin-top: 10px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background-color: #ff0;
+}
+
+footer img {
+  width: 125px;
+  height: 100%;
+}
+
+footer .git-hub a {
+  text-decoration: none;
+}
+
+footer .git-hub a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  height: 50px;
+  background-color: #ff0;
+}
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  /*position: inline-block;*/
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: space-between;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}

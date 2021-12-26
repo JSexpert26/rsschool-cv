@@ -5,9 +5,197 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>My CV will be here soon!</h1>
+    <main>
+      <div class="left-side">
+        <header>
+          <div class="imgBx">
+            <img src="Portrait.jpg" alt="My Photo" />
+          </div>
+          <h1>Yauheni Safronau</h1>
+          <span>Junior Frontend Developer</span>
+        </header>
+
+        <div class="contactInfo">
+          <h3 class="title">Contact Information</h3>
+          <ul>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-phone" aria-hidden="true"></i
+              ></span>
+              <span class="text"><em>+375292585495</em></span>
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-envelope-o" aria-hidden="true"></i
+              ></span>
+              <span class="text"><em>esafronov313@gmail.com</em></span>
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-telegram" aria-hidden="true"></i
+              ></span>
+              <span class="text"><em>@esafronov25</em></span>
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-map-marker" aria-hidden="true"></i
+              ></span>
+              <span class="text"><em>Belarus, Baranovichi</em></span>
+            </li>
+          </ul>
+        </div>
+        <div class="contactInfo education" id="education">
+          <h3 class="title">Education</h3>
+          <ul>
+            <li>
+              <h5>2001-2012</h5>
+              <h4>Baranovichi, Gymnasium № 5</h4>
+            </li>
+            <li>
+              <h5>2012 - 2016</h5>
+              <h4>Belarusian National Technical University, engineer</h4>
+            </li>
+          </ul>
+        </div>
+        <div class="contactInfo" id="languages">
+          <h3 class="title">Languages</h3>
+          <ul>
+            <li>
+              <span class="text">Russian: <em>Native</em></span>
+            </li>
+            <li>
+              <span class="text">English: <em>A2</em></span>
+            </li>
+            <li>
+              <span class="text">Polish: <em>A1</em></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-side">
+        <nav>
+          <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code-example">Code Example</a></li>
+          </ul>
+        </nav>
+        <div class="about">
+          <h2 class="title2">Profile</h2>
+          <p>
+            Hello, my name is <em>Yauheni Safronau</em>. I'm
+            <strong>26</strong> years old.<br />I'm here to enhance my basic
+            knowledge of <strong>JavaScript</strong> and become a
+            <em>Junior Frontend Developer</em>.
+          </p>
+          <p>
+            I have no experience in this field and this is why I'm taking this
+            course - RS School Stage #0. Wish me good luck and I will try my
+            best not to disappoint you.
+          </p>
+        </div>
+
+        <div class="about">
+          <h2 class="title2">Experience</h2>
+          <div class="box">
+            <div class="year-company">
+              <h5>2021 - Present</h5>
+              <h5>JV Santa Bremor LLC</h5>
+            </div>
+            <div class="text">
+              <h4>Loader</h4>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year-company">
+              <h5>2020 - 2021</h5>
+              <h5>InPost PL</h5>
+            </div>
+            <div class="text">
+              <h4>General Worker</h4>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year-company">
+              <h5>2019 - 2020</h5>
+              <h5>Nomka US</h5>
+            </div>
+            <div class="text">
+              <h4>Call Center Representative</h4>
+            </div>
+          </div>
+        </div>
+        <div class="about skills" id="skills">
+          <h2 class="title2">Skills</h2>
+          <ul>
+            <li class="box">
+              <h4>HTML</h4>
+              <div class="percent"><div style="width: 75%"></div></div>
+            </li>
+            <li class="box">
+              <h4>CSS</h4>
+              <div class="percent"><div style="width: 60%"></div></div>
+            </li>
+            <li class="box">
+              <h4>JAVASCRIPT</h4>
+              <div class="percent">
+                <div style="width: 45%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="about" id="code-example">
+          <h2 class="title2">Code Example</h2>
+          <div class="code-example">
+            <div class="task">
+              <p>JavaScript Array Filter:</p>
+              <p>
+                JavaScript Arrays support a filter function (starting in
+                JavaScript 1.6).
+              </p>
+              <p>
+                Use the filter functionality to complete the function given.
+              </p>
+              <code>getEvenNumbers([2,4,5,6]) // should == [2,4,6]</code>
+            </div>
+            <div class="solution">
+              <p>My solution:</p>
+              <code>
+                function getEvenNumbers(numbersArray){<br />
+                return numbersArray.filter((i) => i % 2 === 0)<br />
+                }
+              </code>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="git-hub">
+            <span class="icon"
+              ><i class="fa fa-github" aria-hidden="true"></i
+            ></span>
+            <span
+              ><a href="https://github.com/JSexpert26" target="_blank"
+                >My Git Hub</a
+              ></span
+            >
+          </div>
+          <span>2021</span>
+          <a href="https://rs.school/js/" target="_blank"
+            ><img src="rs_school_js.svg" alt="RS School Logo"
+          /></a>
+        </footer>
+      </div>
+    </main>
   </body>
 </html>

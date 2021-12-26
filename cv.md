@@ -40,6 +40,6 @@ addNum(2,3);
 ### Languages
 
 **Russian**: _Native_  
-**English**: A1
+**English**: _A2_
 
 ---
